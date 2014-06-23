@@ -7,6 +7,8 @@
 - (void)initialize
 {
     // your code here
+    character = (Character*)[CCBReader load:@"Character"];
+    [physicsNode addChild:character];
 }
 
 -(void)update:(CCTime)delta
@@ -15,5 +17,10 @@
 }
 
 // put new methods here
+- (void)touchBegan:(UIEvent *)touch withEvent:(UIEvent *) event{
+
+    // this will be called every time the player touches the screen
+    [character flap]
+}
 
 @end
