@@ -20,7 +20,7 @@
 - (void)touchBegan:(UIEvent *)touch withEvent:(UIEvent *) event{
 
     // this will be called every time the player touches the screen
-    [character flap]
+    [character flap];
 }
 
 @end
